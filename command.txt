@@ -9,11 +9,32 @@ git status 查看控管狀態
 git add <檔案名稱> 增加要被控管的檔案
 git add . 增加所有檔案控管
 
-git restore 復原檔案
+git restore --staged <檔案名稱> 將檔案退出站存區(取消控管)
+			或是 刪除倉庫區之檔案
+
+git restore <檔案名稱> 復原檔案
 
 
-git cat-file -t 查看檔案類型
-git cat-file -p 查看檔案內容
-git cat-file -s 查看檔案大小
+git cat-file -t <檔案名稱> 查看檔案類型
+git cat-file -p <檔案名稱> 查看檔案內容
+git cat-file -s <檔案名稱> 查看檔案大小
 
 git ls-file -s 查看目前暫存區檔案
+
+git commit -m <註解> 將目前控管之檔案送入倉庫區 
+git commit -am <註解> 將以放入過倉庫之檔案 直接更新並註解
+git commit --amend 將這次commit 加入前次commit 並可修改註解
+
+git rm <檔案名稱> 從倉儲區刪除檔案 需COMMIT確認
+git rm cached <檔案名稱> 從暫存區/倉儲區恢復檔案至未控管
+git rm f <檔案名稱> 從暫存區刪除檔案 
+
+git log 查詢倉庫區歷程
+git log --oneline 查詢倉庫區歷程(簡化)
+git log 2 查詢倉庫區歷程(兩筆資料)
+git log before='2021 09 15’檢視區間日期資料
+git log shortlog 查詢倉庫區歷程(查看註解)
+git log stat 修改註解
+git log --graph 查看樹狀圖
+
+git diff 查看當下宿改過的內容
