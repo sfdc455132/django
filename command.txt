@@ -1,0 +1,19 @@
+git version 查看版本
+git config --global user.name sfdc455132 設定使用者名稱
+git config --global user.email sfdc455132@gmail.com 設定使用者EMAIL
+git config --list 查看CONFIG 資訊
+
+git init 指令控管 
+
+git status 查看控管狀態
+git add <檔案名稱> 增加要被控管的檔案
+git add . 增加所有檔案控管
+
+git restore 復原檔案
+
+
+git cat-file -t 查看檔案類型
+git cat-file -p 查看檔案內容
+git cat-file -s 查看檔案大小
+
+git ls-file -s 查看目前暫存區檔案
