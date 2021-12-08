@@ -14,6 +14,10 @@ git restore --staged <檔案名稱> 將檔案退出站存區(取消控管)
 
 git restore <檔案名稱> 復原檔案
 
+git rm <檔案名稱>
+git rm --cached <檔案名稱>  刪除檔案  (無需做確認動作)
+git rm -f <檔案名稱>
+
 
 git cat-file -t <檔案名稱> 查看檔案類型
 git cat-file -p <檔案名稱> 查看檔案內容
@@ -38,3 +42,13 @@ git log stat 修改註解
 git log --graph 查看樹狀圖
 
 git diff 查看當下宿改過的內容
+
+git branch 確認當前分株狀態
+git branch <名稱> 新增分支
+git checkout <名稱> 切換分支
+git merge <名稱> 合併分支
+git branch -D <名稱> 刪除分支
+git checkout -b <名稱> 新增病切換分之
+
+git checkout commit <commit編碼前6碼> 切換至之前紀錄點
+
