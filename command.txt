@@ -64,7 +64,7 @@ git reset --hard HEAD~ 恢復至上一個紀錄點
 git reset --hard HEAD~1 恢復至上兩個個紀錄點
 git reset ORIG_HEAD 取消這次恢復
 
-
+git clone <url> 複製GITHUB(包含.git)
 
 
 
