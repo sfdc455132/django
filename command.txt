@@ -3,6 +3,7 @@ git config --global user.name sfdc455132 設定使用者名稱
 git config --global user.email sfdc455132@gmail.com 設定使用者EMAIL
 git config --list 查看CONFIG 資訊
 
+
 git init 指令控管 
 
 git status 查看控管狀態
@@ -13,6 +14,7 @@ git restore --staged <檔案名稱> 將檔案退出站存區(取消控管)
 			或是 刪除倉庫區之檔案
 
 git restore <檔案名稱> 復原檔案
+
 
 git rm <檔案名稱>
 git rm --cached <檔案名稱>  刪除檔案  (無需做確認動作)
@@ -41,14 +43,39 @@ git log shortlog 查詢倉庫區歷程(查看註解)
 git log stat 修改註解
 git log --graph 查看樹狀圖
 
+git relog 查看所有歷程操作
+
 git diff 查看當下宿改過的內容
 
 git branch 確認當前分株狀態
 git branch <名稱> 新增分支
-git checkout <名稱> 切換分支
 git merge <名稱> 合併分支
 git branch -D <名稱> 刪除分支
-git checkout -b <名稱> 新增病切換分之
 
-git checkout commit <commit編碼前6碼> 切換至之前紀錄點
+
+git checkout -b <名稱> 新增病切換分之
+git checkout <名稱> 切換分支
+git checkout <commit編碼前6碼> 切換至之前紀錄點
+
+git reset <commit編碼前6碼> 恢復至之前紀錄點(新增及修改會留著)
+git reset --soft <commit編碼前6碼> 恢復至之前紀錄點(新增及修改會留著)
+git reset --hard <commit編碼前6碼> 恢復至之前紀錄點(新增及修改不會留著)
+git reset --hard HEAD~ 恢復至上一個紀錄點
+git reset --hard HEAD~1 恢復至上兩個個紀錄點
+git reset ORIG_HEAD 取消這次恢復
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
