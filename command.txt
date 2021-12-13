@@ -51,9 +51,10 @@ git branch 確認當前分株狀態
 git branch <名稱> 新增分支
 git merge <名稱> 合併分支
 git branch -D <名稱> 刪除分支
+git branch -a 顯示遠端分支
+git branch -vv 檢視遠端分支狀況
 
-
-git checkout -b <名稱> 新增病切換分之
+git checkout -b <名稱> 新增並切換分支
 git checkout <名稱> 切換分支
 git checkout <commit編碼前6碼> 切換至之前紀錄點
 
@@ -64,8 +65,25 @@ git reset --hard HEAD~ 恢復至上一個紀錄點
 git reset --hard HEAD~1 恢復至上兩個個紀錄點
 git reset ORIG_HEAD 取消這次恢復
 
+git revert <commit編碼前6碼> 恢復到該紀錄但保留修改(可減少COMMIT列表數)
+
 git clone <url> 複製GITHUB(包含.git)
 
+git push 將本地端推去遠端
+git push origin master -f 強制更新遠端
+git push delete origin <分支> 遠端分支的刪除 
+
+
+git remote show origin 印出遠端倉庫資訊
+git remote remove origin 移除遠端 origin
+git remote add origin <url> 新增倉庫名稱
+
+
+
+git pull 將遠端拉回本地
+git fecth 確認修改部分
+git fetch -prune 遠程分支刪除後，需要的指令
+git merge 合併
 
 
 
